@@ -1,0 +1,10 @@
+igraph>=1.0
+pandas
+numpy
+scipy
+matplotlib
+seaborn
+powerlaw
+nbconvert
+nbformat
+ipykernel

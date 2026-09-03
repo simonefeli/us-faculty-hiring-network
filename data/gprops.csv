@@ -1,0 +1,7 @@
+# prop_name, value
+name,faculty_hiring_us (academia)
+description,"Networks of faculty hiring for all PhD-granting US universities over the decade 2011–2020. Each node is a PhD-granting institution, and a directed edge (i,j) indicates that a person received their PhD from node i and was tenure-track faculty at node j during time of collection (2011-2020). This dataset is divided into separate networks for all 107 fields, as well as aggregate networks for 8 domains, and an overall network for all of academia. Edge properties include the total count of hires, as well as separate counts for men and women."
+citation,"['Wapman, K.H., Zhang, S., Clauset, A., Larremore, D. B., \"Quantifying hierarchy and dynamics in US faculty hiring and retention.\" Nature (2022)., https://doi.org/10.1038/s41586-022-05222-x']"
+url,https://github.com/LarremoreLab/us-faculty-hiring-networks
+tags,"['Economic', 'Employment', 'Weighted', 'Metadata']"
+selector,Academia

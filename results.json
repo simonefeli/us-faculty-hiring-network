@@ -1,0 +1,556 @@
+{
+ "n_nodes_total": 3284,
+ "n_hirers": 368,
+ "n_producers": 3282,
+ "hires_total": 274474,
+ "hires_internal": 238986,
+ "hires_external": 35488,
+ "external_share": 0.12929457799281535,
+ "men_total": 152042,
+ "women_total": 81846,
+ "top_external": [
+  [
+   "University of Toronto",
+   1238.0
+  ],
+  [
+   "University of Cambridge",
+   1080.0
+  ],
+  [
+   "University of Oxford",
+   1027.0
+  ],
+  [
+   "City University of New York, The",
+   729.0
+  ],
+  [
+   "University of London",
+   629.0
+  ],
+  [
+   "University of British Columbia",
+   616.0
+  ],
+  [
+   "Mcgill University",
+   583.0
+  ],
+  [
+   "University of Alberta",
+   396.0
+  ],
+  [
+   "Lomonosov Moscow State University",
+   318.0
+  ],
+  [
+   "ETH Zurich",
+   301.0
+  ]
+ ],
+ "n_self_loops": 358,
+ "self_hires": 26720,
+ "self_hire_share": 0.09734984005771039,
+ "supply_N": 3284,
+ "supply_E": 61578,
+ "market_N": 368,
+ "market_E": 36870,
+ "basic_table": [
+  {
+   "network": "supply (all 3,284)",
+   "N": 3284,
+   "E": 61578,
+   "density": 0.005711517977489321,
+   "mean_degree": 18.75091352009744,
+   "reciprocity": 0.31741855857611484,
+   "diameter": 7,
+   "avg_path_length": 2.2691363042531574
+  },
+  {
+   "network": "market (368 rosters)",
+   "N": 368,
+   "E": 36870,
+   "density": 0.272997867551238,
+   "mean_degree": 100.19021739130434,
+   "reciprocity": 0.5301328993761866,
+   "diameter": 6,
+   "avg_path_length": 1.818354463635613
+  }
+ ],
+ "market_density": 0.272997867551238,
+ "market_reciprocity": 0.5301328993761866,
+ "market_diameter": 6,
+ "market_apl": 1.818354463635613,
+ "market_max_k_in": 208,
+ "market_max_k_out": 304,
+ "supply_n_scc": 2922,
+ "supply_largest_scc": 363,
+ "supply_singleton_scc": 2921,
+ "market_n_scc": 6,
+ "market_largest_scc": 363,
+ "mean_k_out": 100.19021739130434,
+ "mean_s_out": 576.8097826086956,
+ "max_s_out": 7615.0,
+ "max_s_in": 2392.0,
+ "s_out_ratio": 13.20192588544562,
+ "s_in_ratio": 4.146947697700056,
+ "powerlaw_fits": {
+  "supply out-degree": {
+   "xmin": 1,
+   "alpha": 1.5264722935786006,
+   "ks": 0.03970253446982941,
+   "d_crit": 0.023750250797218365,
+   "n_tail": 3279,
+   "verdict": "REJECTED"
+  },
+  "market out-strength": {
+   "xmin": 56,
+   "alpha": 1.5189217672619226,
+   "ks": 0.10204101001384441,
+   "d_crit": 0.0890965623629369,
+   "n_tail": 233,
+   "verdict": "REJECTED"
+  },
+  "market in-strength": {
+   "xmin": 867,
+   "alpha": 3.6340673923065365,
+   "ks": 0.1268196422339148,
+   "d_crit": 0.13209487728058794,
+   "n_tail": 106,
+   "verdict": "consistent"
+  }
+ },
+ "top_prestige": [
+  [
+   "Harvard",
+   0.0540995146972399,
+   6724.0,
+   1409.0
+  ],
+  [
+   "UC Berkeley",
+   0.04808056805160278,
+   7615.0,
+   1359.0
+  ],
+  [
+   "Stanford",
+   0.04113830758045695,
+   5462.0,
+   1144.0
+  ],
+  [
+   "MIT",
+   0.03807326046364081,
+   4711.0,
+   833.0
+  ],
+  [
+   "Yale",
+   0.027616027672582803,
+   4055.0,
+   1174.0
+  ],
+  [
+   "Princeton",
+   0.025511788875858494,
+   3412.0,
+   728.0
+  ],
+  [
+   "University of Michigan",
+   0.025478545523508176,
+   5836.0,
+   2121.0
+  ],
+  [
+   "University of Chicago",
+   0.024397481498973497,
+   4098.0,
+   998.0
+  ],
+  [
+   "Columbia",
+   0.02431224324632085,
+   3960.0,
+   1582.0
+  ],
+  [
+   "Cornell",
+   0.020476436490136144,
+   4203.0,
+   1564.0
+  ]
+ ],
+ "top_hirers": [
+  [
+   "Penn State",
+   2392.0,
+   3076.0
+  ],
+  [
+   "Ohio State University",
+   2378.0,
+   3573.0
+  ],
+  [
+   "University of Florida",
+   2272.0,
+   2349.0
+  ],
+  [
+   "Texas A&M",
+   2270.0,
+   2376.0
+  ],
+  [
+   "Arizona State",
+   2122.0,
+   1499.0
+  ],
+  [
+   "University of Michigan",
+   2121.0,
+   5836.0
+  ],
+  [
+   "Michigan State",
+   2059.0,
+   2841.0
+  ],
+  [
+   "University of Illinois Urbana-Champaign",
+   2038.0,
+   4923.0
+  ],
+  [
+   "UW",
+   2028.0,
+   3025.0
+  ],
+  [
+   "University of Minnesota Twin Cities",
+   2027.0,
+   3596.0
+  ]
+ ],
+ "top_producers": [
+  [
+   "UC Berkeley",
+   7615.0,
+   1359.0
+  ],
+  [
+   "Harvard",
+   6724.0,
+   1409.0
+  ],
+  [
+   "University of Michigan",
+   5836.0,
+   2121.0
+  ],
+  [
+   "Stanford",
+   5462.0,
+   1144.0
+  ],
+  [
+   "University of Wisconsin-Madison",
+   5441.0,
+   1882.0
+  ],
+  [
+   "University of Illinois Urbana-Champaign",
+   4923.0,
+   2038.0
+  ],
+  [
+   "MIT",
+   4711.0,
+   833.0
+  ],
+  [
+   "UT Austin",
+   4467.0,
+   1942.0
+  ],
+  [
+   "Cornell",
+   4203.0,
+   1564.0
+  ],
+  [
+   "University of Chicago",
+   4098.0,
+   998.0
+  ]
+ ],
+ "top_betweenness": [
+  [
+   "University of Utah",
+   1808.1342662443556
+  ],
+  [
+   "Texas A&M",
+   1792.6974899547029
+  ],
+  [
+   "Michigan State",
+   1730.8966097079256
+  ],
+  [
+   "Vanderbilt",
+   1499.8959677764274
+  ],
+  [
+   "Boston University",
+   1474.0526633257787
+  ],
+  [
+   "Ohio State University",
+   1434.7376512522687
+  ],
+  [
+   "Penn State",
+   1376.4225584088763
+  ],
+  [
+   "University of Florida",
+   1357.4981356107194
+  ],
+  [
+   "Baylor",
+   1351.5092430460288
+  ],
+  [
+   "University of Georgia",
+   1346.7527376251064
+  ]
+ ],
+ "spearman_sout_sin": 0.8918045629970551,
+ "spearman_prestige_btw": 0.8449450306825624,
+ "spearman_matrix": {
+  "k_in": {
+   "k_in": 1.0,
+   "k_out": 0.756,
+   "s_in": 0.919,
+   "s_out": 0.745,
+   "prestige": 0.664,
+   "betweenness": 0.834,
+   "eigenvector": 0.838,
+   "harmonic": 0.999
+  },
+  "k_out": {
+   "k_in": 0.756,
+   "k_out": 1.0,
+   "s_in": 0.897,
+   "s_out": 0.995,
+   "prestige": 0.964,
+   "betweenness": 0.862,
+   "eigenvector": 0.942,
+   "harmonic": 0.751
+  },
+  "s_in": {
+   "k_in": 0.919,
+   "k_out": 0.897,
+   "s_in": 1.0,
+   "s_out": 0.892,
+   "prestige": 0.833,
+   "betweenness": 0.881,
+   "eigenvector": 0.973,
+   "harmonic": 0.917
+  },
+  "s_out": {
+   "k_in": 0.745,
+   "k_out": 0.995,
+   "s_in": 0.892,
+   "s_out": 1.0,
+   "prestige": 0.974,
+   "betweenness": 0.86,
+   "eigenvector": 0.938,
+   "harmonic": 0.741
+  },
+  "prestige": {
+   "k_in": 0.664,
+   "k_out": 0.964,
+   "s_in": 0.833,
+   "s_out": 0.974,
+   "prestige": 1.0,
+   "betweenness": 0.845,
+   "eigenvector": 0.896,
+   "harmonic": 0.658
+  },
+  "betweenness": {
+   "k_in": 0.834,
+   "k_out": 0.862,
+   "s_in": 0.881,
+   "s_out": 0.86,
+   "prestige": 0.845,
+   "betweenness": 1.0,
+   "eigenvector": 0.85,
+   "harmonic": 0.835
+  },
+  "eigenvector": {
+   "k_in": 0.838,
+   "k_out": 0.942,
+   "s_in": 0.973,
+   "s_out": 0.938,
+   "prestige": 0.896,
+   "betweenness": 0.85,
+   "eigenvector": 1.0,
+   "harmonic": 0.833
+  },
+  "harmonic": {
+   "k_in": 0.999,
+   "k_out": 0.751,
+   "s_in": 0.917,
+   "s_out": 0.741,
+   "prestige": 0.658,
+   "betweenness": 0.835,
+   "eigenvector": 0.833,
+   "harmonic": 1.0
+  }
+ },
+ "C_global": 0.6832924261870355,
+ "C_avg_local": 0.7546933502580128,
+ "C_global_supply": 0.4047966244334493,
+ "n_communities": 4,
+ "Q_louvain": 0.14837324743822158,
+ "n_comm_walktrap": 9,
+ "Q_walktrap": 0.13006752372611163,
+ "Q_supply": 0.11107202930487742,
+ "community_sizes": [
+  149,
+  141,
+  41,
+  37
+ ],
+ "intra_community_share": 0.5012672778494908,
+ "r_degree": -0.14090751348708783,
+ "r_degree_undirected": -0.1966981077567148,
+ "r_faculty_size": -0.09102676379227502,
+ "r_attrition": -0.09412282135163387,
+ "r_degree_supply": -0.21180433484547953,
+ "spearman_size_hiring": 0.7329572327276181,
+ "null_models": [
+  {
+   "model": "empirical",
+   "N": 368,
+   "E": 36870,
+   "reciprocity": 0.5301328993761866,
+   "largest_scc": 363,
+   "C_global": 0.6832924261870355,
+   "r_degree": -0.14090751348708783,
+   "Q_unweighted": 0.06398438036571942
+  },
+  {
+   "model": "Erdos-Renyi",
+   "N": 368,
+   "E": 36870,
+   "reciprocity": 0.26856522918361814,
+   "largest_scc": 368,
+   "C_global": 0.4727251976228196,
+   "r_degree": 0.002378592235904553,
+   "Q_unweighted": 0.044703568848432705
+  },
+  {
+   "model": "configuration model",
+   "N": 368,
+   "E": 27605,
+   "reciprocity": 0.33349030972649885,
+   "largest_scc": 363,
+   "C_global": 0.5487573972803168,
+   "r_degree": -0.052425768305409744,
+   "Q_unweighted": 0.0455501242086433
+  }
+ ],
+ "n_active": 233,
+ "women_share_market": 0.3481801003740614,
+ "rho_prestige_netflow": 0.5374260646616494,
+ "p_prestige_netflow": 7.727313294432783e-19,
+ "rho_prestige_selfhire": 0.3233566535732793,
+ "p_prestige_selfhire": 4.523815006148816e-07,
+ "rho_prestige_women": -0.2862520539004185,
+ "p_prestige_women": 9.029659764362039e-06,
+ "net_exporters": [
+  [
+   "UC Berkeley",
+   7615.0,
+   1359.0,
+   6256.0
+  ],
+  [
+   "Harvard",
+   6724.0,
+   1409.0,
+   5315.0
+  ],
+  [
+   "Stanford",
+   5462.0,
+   1144.0,
+   4318.0
+  ],
+  [
+   "MIT",
+   4711.0,
+   833.0,
+   3878.0
+  ],
+  [
+   "University of Michigan",
+   5836.0,
+   2121.0,
+   3715.0
+  ],
+  [
+   "University of Wisconsin-Madison",
+   5441.0,
+   1882.0,
+   3559.0
+  ]
+ ],
+ "net_importers": [
+  [
+   "George Mason",
+   235.0,
+   1331.0,
+   -1096.0
+  ],
+  [
+   "Brigham Young",
+   132.0,
+   1198.0,
+   -1066.0
+  ],
+  [
+   "East Carolina",
+   56.0,
+   1084.0,
+   -1028.0
+  ],
+  [
+   "Texas State",
+   37.0,
+   1017.0,
+   -980.0
+  ],
+  [
+   "San Diego State",
+   41.0,
+   920.0,
+   -879.0
+  ],
+  [
+   "IUPUI",
+   101.0,
+   974.0,
+   -873.0
+  ]
+ ],
+ "downhill_share_top": 0.9132284682826199,
+ "downhill_share_all": 0.7823956733532454
+}
