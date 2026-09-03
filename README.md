@@ -41,7 +41,6 @@ gender. 3,284 nodes, 61,936 edges, 274,474 individual hires.
 | `data/` | the dataset, three CSV files |
 | `figures/` | figures written by the notebook |
 | `results.json` | every number the notebook computes; the report quotes from here |
-| `toy.ipynb` | a five-node graph used to work out the concepts by hand |
 | `requirements.txt` | the Python packages needed |
 
 Course material — lecture notebooks and my own notes — is deliberately not in this repository: it
