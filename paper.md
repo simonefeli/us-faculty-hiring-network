@@ -128,6 +128,8 @@ This looks like a strict hierarchy, in which faculty move in one direction only.
 were never collected, so they can only have outgoing edges. The result therefore seems to measure
 how the data was gathered rather than how academia works.
 
+![The distribution of strongly connected component sizes, on a logarithmic vertical scale. In the supply network there is one component of 363 universities, 2,921 of a single university, and nothing in between. A distribution with that shape is not what a hierarchy looks like; it is what a one-sided sample looks like.](figures/component_sizes.png){width=88%}
+
 In the market network, where we see both ends of every edge, 363 of the 368 universities fall into
 one component. In terms of topology, this market is not a hierarchy.
 
