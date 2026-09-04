@@ -191,12 +191,16 @@ is one step away, so a measure based on distance largely reduces to a measure ba
 
 Global clustering in the market network is 0.683 and average local clustering is 0.755. The difference reflects how the two measures weight universities: the global figure pools every triple in the graph, so high-degree universities dominate it, while the local average counts every university equally, whatever its size. Neither number is easy to interpret on its own at this density, and we return to both in the comparison with null models.
 
-Louvain [[4]](#ref4) finds four communities with modularity $Q = 0.148$, and walktrap [[5]](#ref5) finds nine with $Q = 0.130$. Values below 0.3 are usually taken as weak evidence of community structure, which suggests that this market is not divided into separate sub-markets. One likely reason is the density: at 0.27 there may simply not be enough absent edges for a community boundary to form. The four communities are nevertheless interpretable. Three appear to be regional, built around the Midwest, Texas and the Mountain West, while the fourth contains Berkeley, Harvard, Michigan, Stanford, MIT and Cornell. That last group spans four states, so it seems to be held together by prestige rather than geography. It is also the set of institutions among which the PageRank walker circulated, so two independent methods identify the same group. Half of all hiring flow stays inside a community, against 25% if flows ignored communities entirely.
+Louvain [[4]](#ref4) finds five communities with modularity $Q = 0.150$, and walktrap [[5]](#ref5) finds nine with $Q = 0.130$. Values below 0.3 are usually taken as weak evidence of community structure, which suggests that this market is not divided into separate sub-markets. One likely reason is the density: at 0.27 there may simply not be enough absent edges for a community boundary to form.
+
+The five communities are nevertheless interpretable, and four of them are broadly regional. The largest holds 128 institutions and is led by Harvard, Michigan, MIT, Cornell, Chicago and Yale; a second holds 105 and is southern, led by UT Austin, Texas A&M, Florida and Georgia; a third holds 68 and covers the Midwest, led by Wisconsin, Illinois, Minnesota and Ohio State; a fourth holds 62 and is western, led by Berkeley, Stanford, UCLA and Washington. The fifth contains only five institutions, all Baptist theological seminaries, and it is the most closed group in the network: 83% of the people it trains stay within it. Geography and prestige are therefore not the only organising principles; denomination produces a small community of its own.
+
+Across the whole market, 41.0% of hiring flow stays inside a community. The baseline for comparison is not $1/5$: that would assume the five communities were the same size, and they range from 128 institutions down to five. Weighting each community by its share of outgoing and incoming people gives an expected 25.5%. The preference for hiring within one's own community is thus real but moderate.
 
 
 
 
-![Hiring flows between the four Louvain communities. Left: absolute numbers of people. Right: each row normalised, showing where each community places its graduates. The elite community keeps 48% of its own output, while the Texas community sends more to the Midwest (43%) than it keeps (30%).](figures/community_flows.png){width=78%}
+![Hiring flows between the five Louvain communities. Left: absolute numbers of people. Right: each row normalised, showing where each community places its graduates. The southern community keeps 51% of its own output and the seminaries 83%, while the western community keeps only 34% and sends 26% to the largest community.](figures/community_flows.png){width=78%}
 
 Degree assortativity is $-0.141$ on the directed graph and $-0.197$ on the undirected projection, so
 well-connected universities tend to attach to poorly-connected ones. The sign can be anticipated
@@ -282,7 +286,7 @@ claim a cause.
 
 **H3, disassortativity: supported**, at $-0.141$ against $-0.045$ for the configuration model, so the degree sequence accounts for about a third of it and the remainder does not.
 
-**H4, communities: weakly supported.** Modularity is $0.148$ over four communities, three regional and one an elite group spread across the country, with half of all hiring flow staying inside a community against 25% expected.
+**H4, communities: weakly supported.** Modularity is $0.150$ over five communities, four of them broadly regional and one a closed group of five theological seminaries. 41% of hiring flow stays inside a community, against 25.5% expected once the unequal community sizes are taken into account.
 
 Reciprocity differs most from what randomness produces, at 0.530 against 0.281. And the raw data seems at first to show an extreme hierarchy, an impression that comes from how the dataset was collected rather than from academia; taking this into account turns the conclusion into its opposite.
 
