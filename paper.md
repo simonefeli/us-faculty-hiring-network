@@ -141,7 +141,7 @@ out-degree, 4.1 for in-strength, and 13.2 for out-strength. The sending side is 
 considerably more unequal than the receiving side. The number of
 people a university can hire is limited by the number of posts it has, which depends on its size.
 The number it can place is not limited in the same way, because nothing stops one university from
-placing five times more graduates than the next. Being bounded on the way in and unbounded on the way out
+placing five times as many graduates as the next. Being bounded on the way in and unbounded on the way out
 is consistent with a system in which a few institutions supply many of the others.
 
 
@@ -177,7 +177,7 @@ universities where the professoriate was trained. No external ranking enters the
 The ranking that PageRank returns is Harvard, Berkeley, Stanford, MIT, Yale, Princeton, Michigan,
 Chicago, Columbia and Cornell. Berkeley placed more people than Harvard, 7,615 against 6,724, yet
 Harvard scores higher, because PageRank weights each placement by the standing of the institution
-that made the hire. The other measures disagree. In-strength ranks
+that made the hire. The other measures point elsewhere, and largely agree with each other. In-strength ranks
 Penn State, Ohio State and Florida first: large public universities that hire many people, which
 probably reflects the number of posts they have rather than how sought after they are. Betweenness
 ranks Utah, Texas A&M and Michigan State, mid-tier institutions that lie on the paths between the
@@ -224,12 +224,15 @@ We use two. The Erdos-Renyi model keeps only the number of nodes and edges, so i
 | largest strongly connected component | 363 | 368 | 363 |
 | global clustering $C$ | 0.683 | 0.470 | 0.548 |
 | degree assortativity | -0.141 | -0.010 | -0.045 |
+| modularity $Q$ (unweighted) | 0.065 | 0.043 | 0.046 |
 
 Both null models reproduce the largest strongly connected component. This suggests that the result reported above comes from the density rather than from anything specific to academic hiring.
 
 Clustering is mostly explained. A random graph of the same size reaches 0.470 of the observed 0.683, and a smaller excess remains.
 
 Assortativity behaves differently. The configuration model reaches only -0.045, while we observe $-0.141$. The arithmetic argument given above may therefore explain about a third of the effect, and the rest seems to need another explanation.
+
+The community structure is weak in absolute terms, but it is not nothing. Modularity on the unweighted projection is 0.065 against 0.043 and 0.046 for the two null models, so roughly a third of it is more than randomness alone would produce. That is a small effect, and it is consistent with the regional preference reported above.
 
 Reciprocity differs from both models more than any other quantity we measured. We observe 0.530 against 0.281 and 0.333. Faculty exchange between two universities is mutual much more often than either model produces.
 One interpretation is that departments build lasting relationships rather than filling each post independently, although our data cannot test this directly.
@@ -257,12 +260,14 @@ hierarchy would give roughly half and half.
 
 ![The prestige ladder. Each of the top 45 institutions is placed at a height given by its prestige rank and a horizontal position given by its Louvain community. The strongest 8% of flows are drawn in red when they descend the ranking and in blue when they ascend.](figures/prestige_ladder.png){width=68%}
 
-The result does not depend on the size of the institutions involved or on the topology, and the
-prestige score it uses was derived from the network itself rather than from any external ranking. In plain terms, a person finishing a PhD is
+The result does not depend on how large the institutions are. The prestige score behind it is
+itself a topological measure, but it was derived from the network rather than from any external
+ranking. In plain terms, a person finishing a PhD is
 far more likely to be hired by a less prestigious university than by a more prestigious one.
 
-The self-loops removed in Section 2 can now be examined. Self-hiring accounts for 9.7% of all hires,
-and it is not spread evenly: the rate correlates with prestige at $\rho = 0.323$. MIT retains 33% of
+The self-loops set aside during preprocessing can now be examined. Self-hiring accounts for 11.2%
+of hires inside the market network, or 9.7% of every hire in the dataset, and it is not spread
+evenly: the rate correlates with prestige at $\rho = 0.323$. MIT retains 33% of
 its hires from its own graduates and Harvard 30%. This is consistent with the downhill pattern,
 since a graduate of a top institution has no more prestigious institution to move to, so staying
 may be the only option that does not involve moving down.
